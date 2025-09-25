@@ -1,10 +1,10 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Verdana'
 }
 
 .title {
     text-align: center;
-    font-family: system-ui;
+    font-family: sans-serif;
     padding: 5px;
     
 }
@@ -38,4 +38,11 @@ body {
 .topnav a.active {
   background-color: #4c0374;
   color: white;
+}
+
+.desc {
+  margin-right: 40px;
+  margin-left: 40px;
+  font-size: 18px;
+  font-family: 'Verdana'
 }
