@@ -1,11 +1,17 @@
 body {
-    font-family: 'Verdana';
+    font-family: 'Verdana   ';
 }
 
 .title {
     text-align: center;
+    font-family: system-ui;
     padding: 5px;
     
+}
+
+.subtitle {
+    text-align: center;
+    color: darkslategrey;
 }
 
 
