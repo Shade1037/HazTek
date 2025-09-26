@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HazTek | ACCESS</title>
+    <title>HazTek | Employee Log In</title>
 </head>
 <body>
     <div class="topnav">
@@ -15,17 +15,24 @@
     </div>
     <h1 class="title">Log In</h1>
     <div class="login-container">
-        <h2>Enter Password</h2>
-        <input type="password" id="passwordInput" placeholder="Enter password">
+        <h2>Sign In</h2>
+        <input type="text" id="usernameInput" placeholder="Enter username"> <br>
+        <input type="password" id="passwordInput" placeholder="Enter password"> <br>
         <button onclick="checkPassword()">Login</button>
     </div>
     <script>
         function checkPassword() {
-            const correctPassword = "Employee1992#HT";
+            const correctPassword = "MyAwesomePassword1000#HT";
+            const correctUsername = "TomCray1992";
             const enteredPassword = document.getElementById("passwordInput").value;
-
+            const enteredUsername = document.getElementById("usernameInput").value;
+            
             if (enteredPassword === correctPassword) {
+                if (enteredUsername === correctUsername) {
                 window.location.href = "personal.html";
+                } else {
+                    alert("Login attempt failed.");
+                }
             } else {
                 alert("Login attempt failed.");
             }
