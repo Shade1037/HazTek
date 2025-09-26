@@ -1,25 +1,38 @@
+
 body {
     font-family: 'Verdana'
 }
 
 .title {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Orbitron', sans-serif;
     padding: 5px;
     
 }
 
 .subtitle {
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
     color: darkslategrey;
 }
 
 
 .topnav {
-  background-color: blueviolet;
+  font-family: 'Orbitron', sans-serif;
+  background: repeating-linear-gradient(
+    0deg,
+    #750075,
+    #5e005e 1px,
+    #640064 2px
+  );
   overflow: hidden;
 }
 
+.topnav a:hover {
+  color: #ff0066;
+  text-shadow: 0 0 2px #ff0066;
+  transform: scale(1.05);
+}
 
 .topnav a {
   float: left;
@@ -52,4 +65,9 @@ body {
   background-color: lightgray;
   padding: 10px;
   margin-top: 25px
+}
+
+a:hover {
+  text-shadow: 1px 0 rgb(160, 67, 0), -1px 0 rgb(145, 0, 143);
+  transform: scale(1.05);
 }
