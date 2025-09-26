@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HazTek | ACCESS</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a class="active" href="access.html">Login</a>
+    </div>
+    <h1 class="title">Log In</h1>
+    <div class="login-container">
+        <h2>Enter Password</h2>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button onclick="checkPassword()">Login</button>
+    </div>
+    <script>
+        function checkPassword() {
+            const correctPassword = "Employee1992#HT";
+            const enteredPassword = document.getElementById("passwordInput").value;
+
+            if (enteredPassword === correctPassword) {
+                window.location.href = "tomcray.html";
+            } else {
+                alert("Login attempt failed.");
+            }
+        }
+    </script>
+</body>
+</html>
